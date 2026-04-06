@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Ini jurus mautnya biar nggak error lagi
+    // Pakai esbuild biar nggak error baca karakter '%' di SVG noise
     minify: 'esbuild'
   }
 })
